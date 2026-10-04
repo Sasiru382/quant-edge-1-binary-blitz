@@ -1,0 +1,24 @@
+{
+  "status": "planning-only",
+  "portfolio": {
+    "assets": [],
+    "weights": []
+  },
+  "data": {
+    "source": null,
+    "start": null,
+    "end": null
+  },
+  "evaluation": {
+    "train_end": null,
+    "test_start": null,
+    "risk_measure": null,
+    "confidence_level": null
+  },
+  "methods": {
+    "wavelet": null,
+    "scales": [],
+    "copulas": [],
+    "benchmark": null
+  }
+}
