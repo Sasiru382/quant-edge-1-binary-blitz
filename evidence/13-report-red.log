@@ -1,0 +1,56 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /home/sasiru/quant-edge-1-binary-blitz/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sasiru/quant-edge-1-binary-blitz
+collecting ... collected 1 item
+
+tests/test_integration.py::test_offline_cli_reproduces_pinned_real_data_numeric_outputs FAILED [100%]
+
+=================================== FAILURES ===================================
+_________ test_offline_cli_reproduces_pinned_real_data_numeric_outputs _________
+
+tmp_path = PosixPath('/home/sasiru/.hermes/cache/scratch/pytest-of-sasiru/pytest-13/test_offline_cli_reproduces_pi0')
+
+    def test_offline_cli_reproduces_pinned_real_data_numeric_outputs(tmp_path):
+        root = Path(__file__).resolve().parents[1]
+        config = json.loads((root/'config/study.json').read_text())
+        config.update(bootstrap_replicates=9, simulation_size=2000, df_grid=[4,10])
+        config_path = tmp_path/'config.json'
+        config_path.write_text(json.dumps(config))
+        target = tmp_path/'output'
+        command = [sys.executable,'-m','src.study','--offline','--config',str(config_path),'--out',str(target)]
+        subprocess.run(command,cwd=root,check=True,capture_output=True,text=True)
+        results = json.loads((target/'results.json').read_text())
+        assert results['audit']['rows'] == 5031
+        assert results['provenance']['snapshot_sha256'] == config['snapshot_sha256']
+        assert len(results['risk']) == 20
+        from pypdf import PdfReader
+>       pdf = PdfReader(target/'study.pdf')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_integration.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pypdf/_reader.py:151: in __init__
+    self._initialize_stream(stream)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <pypdf._reader.PdfReader object at 0x7526af849a90>
+stream = PosixPath('/home/sasiru/.hermes/cache/scratch/pytest-of-sasiru/pytest-13/test_offline_cli_reproduces_pi0/output/study.pdf')
+
+    def _initialize_stream(self, stream: Union[StrByteType, Path]) -> None:
+        if hasattr(stream, "mode") and "b" not in stream.mode:
+            logger_warning(
+                "PdfReader stream/file object is not in binary mode. "
+                "It may not be read correctly.",
+                source=__name__,
+            )
+        self._stream_opened = False
+        if isinstance(stream, (str, Path)):
+>           with open(stream, "rb") as fh:
+                 ^^^^^^^^^^^^^^^^^^
+E           FileNotFoundError: [Errno 2] No such file or directory: '/home/sasiru/.hermes/cache/scratch/pytest-of-sasiru/pytest-13/test_offline_cli_reproduces_pi0/output/study.pdf'
+
+.venv/lib/python3.14/site-packages/pypdf/_reader.py:172: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_integration.py::test_offline_cli_reproduces_pinned_real_data_numeric_outputs
+============================== 1 failed in 1.55s ===============================

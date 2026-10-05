@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /home/sasiru/quant-edge-1-binary-blitz/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sasiru/quant-edge-1-binary-blitz
+collecting ... collected 1 item
+
+tests/test_model.py::test_haar_coarse_scaling_recovers_compounding_without_straddles FAILED [100%]
+
+=================================== FAILURES ===================================
+_______ test_haar_coarse_scaling_recovers_compounding_without_straddles ________
+
+    def test_haar_coarse_scaling_recovers_compounding_without_straddles():
+        dates = pd.to_datetime(['2015-12-28','2015-12-29','2015-12-30','2015-12-31','2016-01-04','2016-01-05','2016-01-06'])
+        frame = pd.DataFrame(np.arange(14).reshape(7,2)/1000, index=dates, columns=['HiTec','Manuf'])
+>       train, test, audit = model.split_blocks(frame, 2, '2016-01-01')
+                             ^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'src.model' has no attribute 'split_blocks'
+
+tests/test_model.py:10: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_model.py::test_haar_coarse_scaling_recovers_compounding_without_straddles
+============================== 1 failed in 0.24s ===============================

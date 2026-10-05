@@ -1,0 +1,9 @@
+{
+  "rows": 5031,
+  "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/5_Industry_Portfolios_daily_CSV.zip",
+  "accessed_utc": "2026-10-05T11:17:16.255084+00:00",
+  "archive_sha256": "8ede64c6df9134ab5c372a264f31640ab6737b9f942f7207f62828005542c9d3",
+  "snapshot_sha256": "4ac1f03a05e875801eecc56329cb52ed16e3b89b1277a8004b4791d4d651c48a",
+  "member": "5_Industry_Portfolios_Daily.csv",
+  "source_header": "This file was created using the 202608 CRSP database."
+}

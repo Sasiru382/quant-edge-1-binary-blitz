@@ -1,0 +1,6 @@
+horizon,train_discarded_days,train_blocks,test_discarded_days,test_blocks
+1,0,2517,0,2514
+2,1,1258,0,1257
+4,1,629,2,628
+8,5,314,2,314
+16,5,157,2,157

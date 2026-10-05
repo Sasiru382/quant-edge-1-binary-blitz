@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /home/sasiru/quant-edge-1-binary-blitz/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sasiru/quant-edge-1-binary-blitz
+collecting ... collected 2 items
+
+tests/test_model.py::test_haar_coarse_scaling_recovers_compounding_without_straddles PASSED [ 50%]
+tests/test_model.py::test_rank_likelihood_fit_positive_definite_and_tail FAILED [100%]
+
+=================================== FAILURES ===================================
+_____________ test_rank_likelihood_fit_positive_definite_and_tail ______________
+
+    def test_rank_likelihood_fit_positive_definite_and_tail():
+        rng = np.random.default_rng(20)
+        z = rng.multivariate_normal([0,0], [[1,.7],[.7,1]], size=500)
+        x = z / np.sqrt(rng.chisquare(4,500)[:,None]/4)
+>       params = model.fit_copula(x, 't', [3,4,7,30])
+                 ^^^^^^^^^^^^^^^^
+E       AttributeError: module 'src.model' has no attribute 'fit_copula'
+
+tests/test_model.py:25: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_model.py::test_rank_likelihood_fit_positive_definite_and_tail
+========================= 1 failed, 1 passed in 0.26s ==========================

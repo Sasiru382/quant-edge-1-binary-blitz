@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /home/sasiru/quant-edge-1-binary-blitz/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sasiru/quant-edge-1-binary-blitz
+collecting ... collected 14 items
+
+tests/test_acquisition.py::test_pinned_cache_offline_and_revision_failure PASSED [  7%]
+tests/test_data.py::test_first_value_weighted_section_and_percent_scaling PASSED [ 14%]
+tests/test_data.py::test_invalid_source_returns_rejected[-99.99] PASSED  [ 21%]
+tests/test_data.py::test_invalid_source_returns_rejected[-999] PASSED    [ 28%]
+tests/test_data.py::test_invalid_source_returns_rejected[nan] PASSED     [ 35%]
+tests/test_data.py::test_invalid_source_returns_rejected[-101] PASSED    [ 42%]
+tests/test_data.py::test_duplicates_rejected PASSED                      [ 50%]
+tests/test_data.py::test_data_audit_covers_observed_rows_extrema_and_absent_weekdays PASSED [ 57%]
+tests/test_evaluate.py::test_coverage_pinball_and_es_residual_are_not_es_validation PASSED [ 64%]
+tests/test_model.py::test_haar_coarse_scaling_recovers_compounding_without_straddles PASSED [ 71%]
+tests/test_model.py::test_rank_likelihood_fit_positive_definite_and_tail PASSED [ 78%]
+tests/test_model.py::test_seeded_simulation_empirical_marginals_loss_sign_and_es PASSED [ 85%]
+tests/test_study.py::test_complete_analysis_and_future_perturbation_invariance PASSED [ 92%]
+tests/test_uncertainty.py::test_block_resampling_tail_uncertainty_and_effective_sample_size PASSED [100%]
+
+============================== 14 passed in 0.99s ==============================

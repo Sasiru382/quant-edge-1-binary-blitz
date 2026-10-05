@@ -1,0 +1,425 @@
+{
+  "modified_tracked_files": 3,
+  "untracked_files": 66,
+  "files_total_changed": 69,
+  "added_text_lines": 3974,
+  "deleted_text_lines": 34,
+  "new_binary_files": 4,
+  "public_bundle_zip_bytes_no_raw_data": 931571,
+  "details": [
+    {
+      "path": ".gitignore",
+      "added": 12,
+      "deleted": 0,
+      "status": "modified"
+    },
+    {
+      "path": "README.md",
+      "added": 88,
+      "deleted": 30,
+      "status": "modified"
+    },
+    {
+      "path": "docs/AI_USAGE.md",
+      "added": 14,
+      "deleted": 4,
+      "status": "modified"
+    },
+    {
+      "path": "config/study.json",
+      "added": 29,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/01-parser-green.log",
+      "added": 9,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/01-parser-red.log",
+      "added": 28,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/02-validation-green.log",
+      "added": 14,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/02-validation-red.log",
+      "added": 73,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/03-acquisition-green.log",
+      "added": 15,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/03-acquisition-red.log",
+      "added": 29,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/04-haar-green.log",
+      "added": 16,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/04-haar-red.log",
+      "added": 22,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/05-copula-green.log",
+      "added": 17,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/05-copula-red.log",
+      "added": 24,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/06-simulation-green.log",
+      "added": 18,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/06-simulation-red.log",
+      "added": 24,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/07-evaluation-green.log",
+      "added": 19,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/07-evaluation-red.log",
+      "added": 21,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/08-uncertainty-green.log",
+      "added": 20,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/08-uncertainty-red.log",
+      "added": 21,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/09-analysis-green.log",
+      "added": 21,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/09-analysis-red.log",
+      "added": 21,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/10-audit-green.log",
+      "added": 22,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/10-audit-red.log",
+      "added": 26,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/11-infinite-green.log",
+      "added": 23,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/11-infinite-red.log",
+      "added": 30,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/12-cli-green.log",
+      "added": 24,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/12-cli-red.log",
+      "added": 51,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/13-report-green.log",
+      "added": 24,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/13-report-red.log",
+      "added": 56,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/14-layout-green.log",
+      "added": 24,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/14-layout-red.log",
+      "added": 37,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/README.md",
+      "added": 48,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/change-statistics.json",
+      "added": 425,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/download.log",
+      "added": 9,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/final-tests.log",
+      "added": 29,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/full-study-1.log",
+      "added": 1,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/full-study-2.log",
+      "added": 1,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/full-study-3.log",
+      "added": 1,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/initial-study.log",
+      "added": 1,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/pdf-preview.png",
+      "added": null,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/pdf-verification.json",
+      "added": 21,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/reproducibility.json",
+      "added": 55,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "evidence/run1-hashes.json",
+      "added": 12,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "reports/block_audit.csv",
+      "added": 6,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "reports/comparisons.csv",
+      "added": 6,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "reports/pinball.png",
+      "added": null,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "reports/provenance.json",
+      "added": 8,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "reports/results.json",
+      "added": 1293,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "reports/risk.csv",
+      "added": 21,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "reports/risk.png",
+      "added": null,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "reports/study.md",
+      "added": 190,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "reports/study.pdf",
+      "added": 220,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "reports/tail_dependence.png",
+      "added": null,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "requirements.lock.txt",
+      "added": 22,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "src/data.py",
+      "added": 103,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "src/evaluate.py",
+      "added": 13,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "src/model.py",
+      "added": 93,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "src/report.py",
+      "added": 149,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "src/study.py",
+      "added": 90,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "src/uncertainty.py",
+      "added": 60,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "tests/__init__.py",
+      "added": 0,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "tests/test_acquisition.py",
+      "added": 33,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "tests/test_data.py",
+      "added": 41,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "tests/test_evaluate.py",
+      "added": 15,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "tests/test_integration.py",
+      "added": 32,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "tests/test_model.py",
+      "added": 59,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "tests/test_study.py",
+      "added": 28,
+      "deleted": 0,
+      "status": "untracked"
+    },
+    {
+      "path": "tests/test_uncertainty.py",
+      "added": 17,
+      "deleted": 0,
+      "status": "untracked"
+    }
+  ]
+}

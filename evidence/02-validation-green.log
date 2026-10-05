@@ -1,0 +1,14 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /home/sasiru/quant-edge-1-binary-blitz/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sasiru/quant-edge-1-binary-blitz
+collecting ... collected 6 items
+
+tests/test_data.py::test_first_value_weighted_section_and_percent_scaling PASSED [ 16%]
+tests/test_data.py::test_invalid_source_returns_rejected[-99.99] PASSED  [ 33%]
+tests/test_data.py::test_invalid_source_returns_rejected[-999] PASSED    [ 50%]
+tests/test_data.py::test_invalid_source_returns_rejected[nan] PASSED     [ 66%]
+tests/test_data.py::test_invalid_source_returns_rejected[-101] PASSED    [ 83%]
+tests/test_data.py::test_duplicates_rejected PASSED                      [100%]
+
+============================== 6 passed in 0.23s ===============================

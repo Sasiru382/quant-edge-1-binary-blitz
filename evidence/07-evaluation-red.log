@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /home/sasiru/quant-edge-1-binary-blitz/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sasiru/quant-edge-1-binary-blitz
+collecting ... collected 1 item
+
+tests/test_evaluate.py::test_coverage_pinball_and_es_residual_are_not_es_validation FAILED [100%]
+
+=================================== FAILURES ===================================
+_________ test_coverage_pinball_and_es_residual_are_not_es_validation __________
+
+    def test_coverage_pinball_and_es_residual_are_not_es_validation():
+        losses = np.array([-.02,0,.01,.02,.08])
+>       scores = evaluate.score(losses, .02, .04)
+                 ^^^^^^^^^^^^^^
+E       AttributeError: module 'src.evaluate' has no attribute 'score'
+
+tests/test_evaluate.py:9: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_evaluate.py::test_coverage_pinball_and_es_residual_are_not_es_validation
+============================== 1 failed in 0.59s ===============================

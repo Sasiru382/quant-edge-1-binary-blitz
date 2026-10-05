@@ -8,7 +8,19 @@ __pycache__/
 .Rhistory
 .RData
 .Rproj.user/
+# French redistribution permission has NOT been established.
 data/*
 !data/.gitkeep
+# Explicitly publish only aggregate analytical outputs and evidence reports.
 reports/*
 !reports/.gitkeep
+!reports/results.json
+!reports/risk.csv
+!reports/comparisons.csv
+!reports/block_audit.csv
+!reports/provenance.json
+!reports/tail_dependence.png
+!reports/risk.png
+!reports/pinball.png
+!reports/study.md
+!reports/study.pdf

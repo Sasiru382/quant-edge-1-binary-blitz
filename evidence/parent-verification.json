@@ -1,0 +1,22 @@
+{
+  "tests": "21 passed (independent parent execution)",
+  "offline_artifacts_identical": {
+    "block_audit.csv": true,
+    "comparisons.csv": true,
+    "pinball.png": true,
+    "provenance.json": true,
+    "results.json": true,
+    "risk.csv": true,
+    "risk.png": true,
+    "study.md": true,
+    "study.pdf": true,
+    "tail_dependence.png": true
+  },
+  "static_security_scan_matches": {
+    "(?:api_key|password|secret|token)\\s*=\\s*[\\\"\\'][^\\\"\\']{6,}[\\\"\\']": 0,
+    "os\\.system\\(": 0,
+    "shell=True": 0,
+    "pickle\\.loads?\\(": 0,
+    "\\beval\\(": 0
+  }
+}

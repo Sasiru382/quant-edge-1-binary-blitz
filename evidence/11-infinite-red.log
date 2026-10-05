@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /home/sasiru/quant-edge-1-binary-blitz/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sasiru/quant-edge-1-binary-blitz
+collecting ... collected 8 items
+
+tests/test_data.py::test_first_value_weighted_section_and_percent_scaling PASSED [ 12%]
+tests/test_data.py::test_invalid_source_returns_rejected[-99.99] PASSED  [ 25%]
+tests/test_data.py::test_invalid_source_returns_rejected[-999] PASSED    [ 37%]
+tests/test_data.py::test_invalid_source_returns_rejected[nan] PASSED     [ 50%]
+tests/test_data.py::test_invalid_source_returns_rejected[-101] PASSED    [ 62%]
+tests/test_data.py::test_invalid_source_returns_rejected[inf] FAILED     [ 75%]
+tests/test_data.py::test_duplicates_rejected PASSED                      [ 87%]
+tests/test_data.py::test_data_audit_covers_observed_rows_extrema_and_absent_weekdays PASSED [100%]
+
+=================================== FAILURES ===================================
+__________________ test_invalid_source_returns_rejected[inf] ___________________
+
+value = 'inf'
+
+    @pytest.mark.parametrize('value', ['-99.99', '-999', 'nan', '-101', 'inf'])
+    def test_invalid_source_returns_rejected(value):
+>       with pytest.raises(ValueError, match='invalid|sentinel'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_data.py:24: Failed
+=========================== short test summary info ============================
+FAILED tests/test_data.py::test_invalid_source_returns_rejected[inf] - Failed...
+========================= 1 failed, 7 passed in 0.27s ==========================

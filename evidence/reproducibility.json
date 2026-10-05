@@ -1,0 +1,55 @@
+{
+  "run1": {
+    "hashes": {
+      "block_audit.csv": "0132ff87e84747203b8b4cda98a7e08a4861d9036c4b171eed28146f8882529f",
+      "comparisons.csv": "044a53b3e6b34d203e21b3628b2b90e82e0b047b0059eae5b6ac2b64c692b75b",
+      "pinball.png": "e978133a72a271ca14c71ebf6a77feb03ed34ca37f9ec722172df9217c4e6413",
+      "provenance.json": "17dd5947abaec215c827435416fb76fdd14394ac0cb778a7eeb2ea2341d4d1b2",
+      "results.json": "27d72a159be1a8b8f5dbe374a6325bfe3b79c0464fce986a547bb4f69aaecc05",
+      "risk.csv": "9c42352189216f0d6a6ef1ef9228c618cd357ac2253a00c1304937a423a5c8c1",
+      "risk.png": "9ea05e66f55e9c3764e31cef471f7efe2d5ca7a811306335bcf0a5f28be53f55",
+      "study.md": "378147a7c6afa61bae30eeb84698733c75f4757e56d0a7db82a26dbb0d1b7b7a",
+      "study.pdf": "dd405ce5aa6813246b1e3f9c6d47ec2ef5bfebc1ab38155b2a12824f75d7f7a1",
+      "tail_dependence.png": "f043db692241fa2bb2bf183f20b6ba90db5e43babbf33fb8a4a885aad814e65b"
+    },
+    "mode": "normal/default, real pinned cached input"
+  },
+  "runs": [
+    {
+      "all_output_hashes_identical": true,
+      "elapsed_seconds": 23.577,
+      "hashes": {
+        "block_audit.csv": "0132ff87e84747203b8b4cda98a7e08a4861d9036c4b171eed28146f8882529f",
+        "comparisons.csv": "044a53b3e6b34d203e21b3628b2b90e82e0b047b0059eae5b6ac2b64c692b75b",
+        "pinball.png": "e978133a72a271ca14c71ebf6a77feb03ed34ca37f9ec722172df9217c4e6413",
+        "provenance.json": "17dd5947abaec215c827435416fb76fdd14394ac0cb778a7eeb2ea2341d4d1b2",
+        "results.json": "27d72a159be1a8b8f5dbe374a6325bfe3b79c0464fce986a547bb4f69aaecc05",
+        "risk.csv": "9c42352189216f0d6a6ef1ef9228c618cd357ac2253a00c1304937a423a5c8c1",
+        "risk.png": "9ea05e66f55e9c3764e31cef471f7efe2d5ca7a811306335bcf0a5f28be53f55",
+        "study.md": "378147a7c6afa61bae30eeb84698733c75f4757e56d0a7db82a26dbb0d1b7b7a",
+        "study.pdf": "dd405ce5aa6813246b1e3f9c6d47ec2ef5bfebc1ab38155b2a12824f75d7f7a1",
+        "tail_dependence.png": "f043db692241fa2bb2bf183f20b6ba90db5e43babbf33fb8a4a885aad814e65b"
+      },
+      "mode": "normal",
+      "run": 2
+    },
+    {
+      "all_output_hashes_identical": true,
+      "elapsed_seconds": 22.908,
+      "hashes": {
+        "block_audit.csv": "0132ff87e84747203b8b4cda98a7e08a4861d9036c4b171eed28146f8882529f",
+        "comparisons.csv": "044a53b3e6b34d203e21b3628b2b90e82e0b047b0059eae5b6ac2b64c692b75b",
+        "pinball.png": "e978133a72a271ca14c71ebf6a77feb03ed34ca37f9ec722172df9217c4e6413",
+        "provenance.json": "17dd5947abaec215c827435416fb76fdd14394ac0cb778a7eeb2ea2341d4d1b2",
+        "results.json": "27d72a159be1a8b8f5dbe374a6325bfe3b79c0464fce986a547bb4f69aaecc05",
+        "risk.csv": "9c42352189216f0d6a6ef1ef9228c618cd357ac2253a00c1304937a423a5c8c1",
+        "risk.png": "9ea05e66f55e9c3764e31cef471f7efe2d5ca7a811306335bcf0a5f28be53f55",
+        "study.md": "378147a7c6afa61bae30eeb84698733c75f4757e56d0a7db82a26dbb0d1b7b7a",
+        "study.pdf": "dd405ce5aa6813246b1e3f9c6d47ec2ef5bfebc1ab38155b2a12824f75d7f7a1",
+        "tail_dependence.png": "f043db692241fa2bb2bf183f20b6ba90db5e43babbf33fb8a4a885aad814e65b"
+      },
+      "mode": "offline",
+      "run": 3
+    }
+  ]
+}

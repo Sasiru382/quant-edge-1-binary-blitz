@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /home/sasiru/quant-edge-1-binary-blitz/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sasiru/quant-edge-1-binary-blitz
+collecting ... collected 9 items
+
+tests/test_acquisition.py::test_pinned_cache_offline_and_revision_failure PASSED [ 11%]
+tests/test_data.py::test_first_value_weighted_section_and_percent_scaling PASSED [ 22%]
+tests/test_data.py::test_invalid_source_returns_rejected[-99.99] PASSED  [ 33%]
+tests/test_data.py::test_invalid_source_returns_rejected[-999] PASSED    [ 44%]
+tests/test_data.py::test_invalid_source_returns_rejected[nan] PASSED     [ 55%]
+tests/test_data.py::test_invalid_source_returns_rejected[-101] PASSED    [ 66%]
+tests/test_data.py::test_duplicates_rejected PASSED                      [ 77%]
+tests/test_model.py::test_haar_coarse_scaling_recovers_compounding_without_straddles PASSED [ 88%]
+tests/test_model.py::test_rank_likelihood_fit_positive_definite_and_tail PASSED [100%]
+
+============================== 9 passed in 0.75s ===============================

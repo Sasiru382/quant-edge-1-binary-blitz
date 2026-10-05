@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /home/sasiru/quant-edge-1-binary-blitz/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sasiru/quant-edge-1-binary-blitz
+collecting ... collected 1 item
+
+tests/test_study.py::test_complete_analysis_and_future_perturbation_invariance FAILED [100%]
+
+=================================== FAILURES ===================================
+__________ test_complete_analysis_and_future_perturbation_invariance ___________
+
+    def test_complete_analysis_and_future_perturbation_invariance():
+        frame, config = small_inputs()
+>       a = study.analyze(frame, config)
+            ^^^^^^^^^^^^^
+E       AttributeError: module 'src.study' has no attribute 'analyze'
+
+tests/test_study.py:15: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_study.py::test_complete_analysis_and_future_perturbation_invariance
+============================== 1 failed in 0.25s ===============================

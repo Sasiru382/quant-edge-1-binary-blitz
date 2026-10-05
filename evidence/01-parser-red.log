@@ -1,0 +1,28 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /home/sasiru/quant-edge-1-binary-blitz/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sasiru/quant-edge-1-binary-blitz
+collecting ... collected 1 item
+
+tests/test_data.py::test_first_value_weighted_section_and_percent_scaling FAILED [100%]
+
+=================================== FAILURES ===================================
+____________ test_first_value_weighted_section_and_percent_scaling _____________
+
+    def test_first_value_weighted_section_and_percent_scaling():
+>       result = data.parse_returns(SAMPLE)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_data.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'Description\n  Average Value Weighted Returns -- Daily\n,Cnsmr,Manuf,HiTec,Hlth,Other\n20060103,1,2,3,4,5\n20060104,0,-1,-2,0,0\n\n  Average Equal Weighted Returns -- Daily\n,Cnsmr,Manuf,HiTec,Hlth,Other\n20060103,99,99,99,99,99\n'
+
+    def parse_returns(text):
+>       raise NotImplementedError('First value-weighted parser not implemented')
+E       NotImplementedError: First value-weighted parser not implemented
+
+src/data.py:4: NotImplementedError
+=========================== short test summary info ============================
+FAILED tests/test_data.py::test_first_value_weighted_section_and_percent_scaling
+============================== 1 failed in 0.02s ===============================

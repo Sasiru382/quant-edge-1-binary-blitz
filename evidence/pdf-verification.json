@@ -1,0 +1,21 @@
+{
+  "body_pages": 6,
+  "max_body_pages_allowed": 10,
+  "text_characters_per_page": [
+    2787,
+    2356,
+    2332,
+    2187,
+    2868,
+    3850
+  ],
+  "required_text_checks": {
+    "Haar": true,
+    "HiTec": true,
+    "Manuf": true,
+    "ES is not validated": true,
+    "NOT submission approved": true
+  },
+  "rendered_preview": "evidence/pdf-preview.png",
+  "layout_review": "Rendered six-page contact sheet inspected: no clipping, overlap or truncated tables/plots observed."
+}

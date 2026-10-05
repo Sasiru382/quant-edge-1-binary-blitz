@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /home/sasiru/quant-edge-1-binary-blitz/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sasiru/quant-edge-1-binary-blitz
+collecting ... collected 1 item
+
+tests/test_acquisition.py::test_pinned_cache_offline_and_revision_failure FAILED [100%]
+
+=================================== FAILURES ===================================
+________________ test_pinned_cache_offline_and_revision_failure ________________
+
+tmp_path = PosixPath('/home/sasiru/.hermes/cache/scratch/pytest-of-sasiru/pytest-0/test_pinned_cache_offline_and_0')
+
+    def test_pinned_cache_offline_and_revision_failure(tmp_path):
+        payload = io.BytesIO()
+        with zipfile.ZipFile(payload, 'w') as archive:
+            archive.writestr('sample.csv', SAMPLE)
+        blob = payload.getvalue()
+        snapshot = data.parse_returns(SAMPLE).to_csv(index_label='date', float_format='%.8f', lineterminator='\n').encode()
+        config = dict(url='https://invalid.example/data.zip', archive_sha256=hashlib.sha256(blob).hexdigest(), snapshot_sha256=hashlib.sha256(snapshot).hexdigest(), start='2006-01-01', end='2025-12-31')
+        (tmp_path / 'french.zip').write_bytes(blob)
+>       result, provenance = data.acquire(config, tmp_path, offline=True)
+                             ^^^^^^^^^^^^
+E       AttributeError: module 'src.data' has no attribute 'acquire'
+
+tests/test_acquisition.py:18: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_acquisition.py::test_pinned_cache_offline_and_revision_failure
+============================== 1 failed in 0.24s ===============================

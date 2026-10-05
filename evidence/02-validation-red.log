@@ -1,0 +1,73 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /home/sasiru/quant-edge-1-binary-blitz/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sasiru/quant-edge-1-binary-blitz
+collecting ... collected 6 items
+
+tests/test_data.py::test_first_value_weighted_section_and_percent_scaling PASSED [ 16%]
+tests/test_data.py::test_invalid_source_returns_rejected[-99.99] FAILED  [ 33%]
+tests/test_data.py::test_invalid_source_returns_rejected[-999] FAILED    [ 50%]
+tests/test_data.py::test_invalid_source_returns_rejected[nan] FAILED     [ 66%]
+tests/test_data.py::test_invalid_source_returns_rejected[-101] FAILED    [ 83%]
+tests/test_data.py::test_duplicates_rejected FAILED                      [100%]
+
+=================================== FAILURES ===================================
+_________________ test_invalid_source_returns_rejected[-99.99] _________________
+
+value = '-99.99'
+
+    @pytest.mark.parametrize('value', ['-99.99', '-999', 'nan', '-101'])
+    def test_invalid_source_returns_rejected(value):
+>       with pytest.raises(ValueError, match='invalid|sentinel'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_data.py:24: Failed
+__________________ test_invalid_source_returns_rejected[-999] __________________
+
+value = '-999'
+
+    @pytest.mark.parametrize('value', ['-99.99', '-999', 'nan', '-101'])
+    def test_invalid_source_returns_rejected(value):
+>       with pytest.raises(ValueError, match='invalid|sentinel'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_data.py:24: Failed
+__________________ test_invalid_source_returns_rejected[nan] ___________________
+
+value = 'nan'
+
+    @pytest.mark.parametrize('value', ['-99.99', '-999', 'nan', '-101'])
+    def test_invalid_source_returns_rejected(value):
+>       with pytest.raises(ValueError, match='invalid|sentinel'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_data.py:24: Failed
+__________________ test_invalid_source_returns_rejected[-101] __________________
+
+value = '-101'
+
+    @pytest.mark.parametrize('value', ['-99.99', '-999', 'nan', '-101'])
+    def test_invalid_source_returns_rejected(value):
+>       with pytest.raises(ValueError, match='invalid|sentinel'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_data.py:24: Failed
+___________________________ test_duplicates_rejected ___________________________
+
+    def test_duplicates_rejected():
+>       with pytest.raises(ValueError, match='duplicate'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_data.py:28: Failed
+=========================== short test summary info ============================
+FAILED tests/test_data.py::test_invalid_source_returns_rejected[-99.99] - Fai...
+FAILED tests/test_data.py::test_invalid_source_returns_rejected[-999] - Faile...
+FAILED tests/test_data.py::test_invalid_source_returns_rejected[nan] - Failed...
+FAILED tests/test_data.py::test_invalid_source_returns_rejected[-101] - Faile...
+FAILED tests/test_data.py::test_duplicates_rejected - Failed: DID NOT RAISE V...
+========================= 5 failed, 1 passed in 0.26s ==========================

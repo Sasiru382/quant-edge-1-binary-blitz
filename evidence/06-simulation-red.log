@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /home/sasiru/quant-edge-1-binary-blitz/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sasiru/quant-edge-1-binary-blitz
+collecting ... collected 3 items
+
+tests/test_model.py::test_haar_coarse_scaling_recovers_compounding_without_straddles PASSED [ 33%]
+tests/test_model.py::test_rank_likelihood_fit_positive_definite_and_tail PASSED [ 66%]
+tests/test_model.py::test_seeded_simulation_empirical_marginals_loss_sign_and_es FAILED [100%]
+
+=================================== FAILURES ===================================
+_________ test_seeded_simulation_empirical_marginals_loss_sign_and_es __________
+
+    def test_seeded_simulation_empirical_marginals_loss_sign_and_es():
+        x = np.array([[-.04,-.02],[-.01,0],[.01,.02],[.02,.04]])
+        params = dict(kind='t',rho=.5,df=4)
+>       a = model.simulate_losses(x, params, 1000, seed=7)
+            ^^^^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'src.model' has no attribute 'simulate_losses'
+
+tests/test_model.py:38: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_model.py::test_seeded_simulation_empirical_marginals_loss_sign_and_es
+========================= 1 failed, 2 passed in 0.75s ==========================
